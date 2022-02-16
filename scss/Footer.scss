@@ -1,0 +1,174 @@
+@import 'components.scss';
+
+//  var
+
+$color-black: #07090c;
+$color-red: #EF233C; 
+$color-gray: #DDD;
+$color-gray--:#b8b8b8b3;
+$color-caption:#2C2C2C;
+$color-text-title: #DDD;
+
+// end var
+
+// map
+
+$photos: (
+    1: url(../img/2.jpg),
+    2: url(../img/1.jpg),
+    3: url(../img/4.jpg),
+    4: url(../img/19.jpg),
+    5: url(../img/6.jpg),
+    6: url(../img/17.jpg),
+    7: url(../img/10.jpg),
+    8: url(../img/9.jpg),
+);
+$colors:(
+    1:#3b5999,
+    2:#00aced,
+    3:#d44332,
+    4:#8A3AB9,
+    5:#E31010,
+    6:#FE7E00,
+);
+
+#footer{
+    background-color: $color-black;
+
+    .footer-section-1{
+        .logo{
+            h1{
+                a{
+                    @include logo;
+                    color: white !important;
+                    padding-left: 0 !important;
+                }
+            }
+            p{
+                color: $color-text-title;
+                font-weight: 300;
+                font-size: 15px;
+            }
+        }
+        .social-link{
+            .links{
+                gap: 3px;
+                @for $y from 1 through 6 {
+                    .link-#{$y} {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 2rem;
+                        height: 2rem;
+                        font-size: 15px;
+                        background-color: map-get($map: $colors, $key: $y);
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe{
+            form{
+                div{
+                    font-family: 'Open Sans', sans-serif !important;
+                    &:first-of-type{
+                        input{
+                            padding: .55em 10px;
+                            background: transparent;
+                            color: white;
+                            border: 1px solid $color-gray;
+                            font-size: 15px;
+                            &::placeholder{
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        button{
+                            background-color: $color-red;
+                            font-size: 13px;
+                            font-weight: 400;
+                            border: none;
+                            padding: 9px 23px;
+                            
+                            &:hover{
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-section-2{
+        .featured-post{
+            .small-boxes{
+                .Single-B-S{
+                    @include SmallBox;
+                    h6{
+                        a{
+                            color: $color-text-title !important;
+                            &:hover{
+                                color: $color-red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-section-3{
+        .photos-list{
+            nav{
+                @include photo-list;
+            }
+        }
+        .tweets{
+            .tweets-content{
+                @include tweet;
+                -webkit-column-gap: 0 !important;
+                p{
+                    color: $color-text-title !important;
+                    a{
+                        color: $color-text-title !important;
+                        &:hover{
+                            color: $color-red !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .heading-text{
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    .CopyRight{
+        font-family: 'Open Sans', sans-serif !important;
+        .nav-list{
+            text-align: center;
+            a{
+                font-weight: 400;
+                font-size: 14px;
+                margin: 0 4px;
+                color: $color-text-title;
+                &:hover{
+                    color: $color-red !important;
+                }
+            }
+        }
+        .text-CopyRight{
+            p{
+                font-size: 15px;
+                font-weight:300 ;
+                color: $color-text-title;
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+@import 'components.scss';
+
+//  var
+
+$color-black: #07090c;
+$color-red: #EF233C; 
+$color-gray: #DDD;
+$color-gray--:#b8b8b8b3;
+$color-caption:#2C2C2C;
+$color-text-title: #DDD;
+
+// end var
+// map
+
+$colors:(
+    1:#3b5999,
+    2:#00aced,
+    3:#d44332,
+    4:#8A3AB9,
+    5:#E31010,
+    6:#FE7E00,
+);
+
+#MiddleBigSection{
+    .left-section{
+
+            .title{
+                &::after{
+                    @include after-title;
+                }
+                position: relative;
+                h5{
+                    @include title;
+                }
+            }
+            .--single-boxes{
+                font-family: 'Open Sans', sans-serif !important;
+                .big-boxes{
+                    .Single-B-B{
+                        @include B-B;
+                        a{
+                            font-size: 21px !important;
+                        }
+                        .caption{
+                            p{
+                                font-family: 'Lato', sans-serif !important;
+                                font-size: 15px;
+                                color: $color-caption;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+                .small-boxes{
+                    .Single-B-B{
+                        @include B-B;
+                    }
+                    .Single-B-S{
+                        @include SmallBox;
+                        
+                    }
+                }
+            }
+    }
+    .right-section{
+        max-width: 768px !important;
+        margin: auto;
+        &-content{
+            .banner{
+                .-banner{
+                    div{
+                        @include banner;
+                    }
+                }
+            }
+            .social-content{
+                .title{
+                    h5{
+                        font-size: 14px;
+                        color: #DDD;
+                        font-weight: 800;
+                        letter-spacing: 0.1em;
+                    }
+                }
+                .link{
+                    ul{
+                        li{
+                            width: 33.3333%;
+                            display: inline-block;
+                            margin-right: -4px;
+                            padding: 2px;
+                            .single-social-link{
+                                line-height: 1.1rem;
+                                span{
+                                    font-size: 13px;
+                                }
+                                &:hover{
+                                    opacity: .8;
+                                }
+                            }
+                            @for $i from 1 through 6 {
+                                .single-social-link-#{$i} {
+                                    background-color: map-get($map: $colors, $key: $i) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe{
+                background-color: #222;
+                .title{
+                    h5{
+                        color: $color-text-title;
+                        font-size: 15px;
+                        font-weight: 700;
+                        font-family: 'Open Sans', sans-serif !important;
+                    }
+                }
+                form{
+                    width: 85%;
+                    margin: auto;
+                    gap: 10px;
+                    div{
+                        input{
+                            padding: 10px;
+                            border-radius: 2px !important;
+                            &::placeholder{
+                                font-size: 15px;
+                                font-weight: 400;
+                                color: rgba(189, 189, 189, 0.884);
+                            }
+                        }
+                        button{
+                            padding: 10px;
+                            border-radius: 2px !important;
+                            border: none;
+                            background-color: $color-red;
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 600;
+                            &:hover{
+                                opacity: .8;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider{
+                .title{
+                    h6{
+                        font-size: 15px;
+                        color: $color-text-title;
+                        font-weight: 700;
+                        font-family: 'Open Sans', sans-serif
+                    }
+                }
+
+                .carousel-content{
+                    .carousel{
+                        .carousel-control-next, .carousel-control-prev{
+                            @include carouselButtons;
+                            top: 40% !important
+                        }
+                        .carousel-inner{
+                            .carousel-item{
+                                .Single-B-B{
+                                    @include B-B;
+                                    font-family: 'Open Sans', sans-serif !important;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .list{
+                nav{
+                    .Single-B-S{
+                        @include SmallBox;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.big-banner{
+    .banner{
+        .-banner{
+            @include banner;
+            width: 80%;
+            height: 8rem;
+        }
+    }
+}

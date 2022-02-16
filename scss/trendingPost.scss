@@ -1,0 +1,194 @@
+
+@import 'components.scss';
+
+$color-black: #07090c;
+$color-red: #EF233C; 
+$color-gray: #DDD;
+$color-gray--:#b8b8b8b3;
+
+// mixin
+
+@mixin title {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color:#222;
+    padding: 11px 15px;
+    &::after{
+        position: absolute;
+        content: '';
+        border-style: solid;
+        border-width: 15px 0 0 15px;
+        border-color: transparent transparent transparent $color-gray;
+        right: -15px;
+        bottom: 0px;
+    }
+}
+
+@mixin SmallBox {
+    a{
+        width: 8rem !important;
+        div{
+            background-color: $color-black;
+            overflow: hidden;
+            img{
+                transition: transform .4s,opacity .2s;
+            }
+        }
+    }
+    &:hover a div img{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+    .text{
+        div{
+            &:first-of-type{
+                a{
+                    color: $color-black;
+                    font-size: 15px;
+                    font-weight: 700;
+                    &:hover{
+                        color: $color-red;
+                    }
+                }
+            }
+            &:last-of-type{
+                color: $color-gray--;
+                font-size: 12.5px;
+                font-family: 'Lato', sans-serif !important;
+            }
+        }
+    }
+}
+
+@mixin button($opacity) {
+    content: '';
+    position: absolute;
+    border-color: $color-red #52B2C100 #ff050500 #d04d4d00;
+    border-width: 13px 12px 13px 12px;
+    bottom: -27px;
+    border-style: solid;
+    left: 50%;
+    transform: translate(-52%,0%);
+    opacity: $opacity;
+}
+
+#trendingPost{
+    font-family: 'Open Sans', sans-serif;
+
+    .trendingPost-container{
+
+        .trendingPost-title{
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: 0px;
+                width: 100%;
+                background-color: #DDD;
+                height: 2px;
+                z-index: -4;
+            }
+            .title{
+                h5{
+                    @include title();
+                }
+            }
+            .buttons{
+                width: fit-content;
+
+                flex-wrap: wrap;
+                button{
+                    background-color: white;
+                    position: relative;
+                    &:first-of-type{
+                        border-left: 1px solid $color-gray;
+                        background-color: $color-red;
+                        border-color: $color-red;
+                        color: white;
+                        &::before{
+                            @include button(1);
+                        }
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                    color: #07090c;
+                    color: #07090c;
+                    border: 1px solid $color-gray;
+                    padding: 10px 12px;
+                    border-left: 0;
+                    font-size: 13px;
+                    &:hover{
+                        color: $color-red;
+                    }
+                    &:focus{
+                        background-color: $color-red;
+                        border-color: $color-red;
+                        color: white;
+                    }
+                    &::before{
+                        @include button(0);
+                    }
+                    &:focus::before{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .trendingPost-body{
+
+            &-big-boxes{
+                
+                .Single-B-B{
+                    overflow: hidden;
+                    a{
+                        div{
+                            .img{
+                                overflow: hidden;
+                                background-color: $color-black;
+                                img{
+                                    transition: transform .4s ,opacity .2s;
+                                }
+                                
+                            }
+                            span{
+                                padding: 2px 7px;
+                                background-color: #1d2128;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    &:hover a div .img img{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                    .text-c{
+                        div{
+                            h5{
+                                a{
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    color: $color-black;
+                                    &:hover{
+                                        color: $color-red;
+                                    }
+                                }
+                            }
+                            span{
+                                font-family: 'Lato', sans-serif !important;
+                                color: $color-gray--;
+                                font-size: 12.5px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-small-boxes{
+                .Single-B-S{
+                    @include SmallBox;
+                }
+            }
+        }
+    }
+}

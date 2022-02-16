@@ -1,0 +1,311 @@
+@mixin title {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color:#222;
+    padding: 11px 15px;
+    &::after{
+        position: absolute;
+        content: '';
+        border-style: solid;
+        border-width: 15px 0 0 15px;
+        border-color: transparent transparent transparent $color-gray;
+        right: -15px;
+        bottom: 0px;
+    }
+}
+
+@mixin SmallBox {
+    font-family: 'Open Sans', sans-serif !important;
+    a{
+        width: 8rem !important;
+        div{
+            background-color: $color-black;
+            overflow: hidden;
+            img{
+                transition: transform .4s,opacity .2s;
+            }
+        }
+    }
+    &:hover a div img{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+    .text{
+        div{
+            &:first-of-type{
+                a{
+                    color: $color-black;
+                    font-size: 15px;
+                    font-weight: 700;
+                    &:hover{
+                        color: $color-red;
+                    }
+                }
+            }
+            &:last-of-type{
+                color: $color-gray--;
+                font-size: 12.5px;
+                font-family: 'Lato', sans-serif !important;
+            }
+        }
+    }
+}
+
+@mixin after-title {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    width: 100%;
+    background-color: #DDD;
+    height: 2px;
+    z-index: -4;
+}
+
+@mixin B-B {
+    overflow: hidden;
+    a{
+        div{
+            .img{
+                overflow: hidden;
+                background-color: $color-black;
+                img{
+                    transition: transform .4s ,opacity .2s;
+                }
+                                
+            }
+            span{
+                padding: 2px 7px;
+                background-color: #1d2128;
+                font-size: 14px;
+            }
+        }
+    }
+    &:hover a div .img img{
+        transform: scale(1.1);
+        opacity: .8;
+    }
+    .text-c{
+        div{
+            h5{
+                a{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $color-black;
+                    &:hover{
+                        color: $color-red;
+                    }
+                }
+            }
+            span{
+                font-family: 'Lato', sans-serif !important;
+                color: $color-gray--;
+                font-size: 12.5px;
+            }
+        }
+    }
+}
+
+@mixin banner {
+    background-color: #d9d9d9;
+    height: 257px;
+    color: white;
+    font-size: 14px;
+    width: 19rem;
+}
+
+@mixin carouselButtons {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    opacity: .9 !important;
+    transition: opacity .15s ease;
+    padding: 9px !important;
+    background: #222 !important;
+    top: 50% !important;
+    width: 2.7rem !important;
+    height: 3rem;
+    z-index: 5;
+    &:hover{
+        opacity: 1;
+        background: $color-red !important;
+    }
+    &:focus{
+        background: $color-red !important;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        width: .8rem !important;
+        height: .8rem !important;
+    }
+}
+
+@mixin carousel-overlay {
+    overflow: hidden;
+                font-family: 'Open Sans', sans-serif !important;
+                height: 25rem;
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all .5s;
+                    overflow: hidden;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        top: 29%;
+                        z-index: 1;
+                        opacity: 0;
+                        transition: all .3s;
+                        background: #ffffff;
+                        background: linear-gradient(180deg, #ffffff00 0%, #0000002e 13%, #0000009c 86%);
+                    }
+                }
+                &:hover .img::after{
+                    opacity: 1;
+                }
+                &:hover .img{
+                    transform: scale(1.09);
+                }
+                .body{
+                    z-index: 2;
+                    div{
+                        &:first-of-type{
+                            span{
+                                &:first-of-type{
+                                    a{
+                                        background-color: $color-red;
+                                        padding: 6px 8px;
+                                        font-size: 15px;
+                                        font-weight: 300;
+                                        &:hover{
+                                            opacity: .8;
+                                        }
+                                    }
+                                }
+                                &:last-of-type{
+                                    margin-left: 2px;
+                                    padding: 4px 8px;
+                                    background-color: #272727;
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            div{
+                                &:first-of-type{
+                                    h1{
+                                        line-height: 20px;
+                                        a{
+                                            font-weight: 700;
+                                            letter-spacing: 0.05em;
+                                            font-size: 21.5px;
+                                            &:hover{
+                                                opacity: .8;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:last-of-type{
+                                    span{
+                                        font-family: 'Lato', sans-serif !important;
+                                        color: $color-text-title;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+}
+
+@mixin tweet {
+    gap: 24px;
+    .icon{
+        margin-top: 10px;
+        span{
+            background-color: $color-text-title;
+            border-radius: 50%;
+            padding: 13px 16px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    }
+    .text{
+        font-weight: 300;
+        font-size: 15px;
+        color: $color-caption;
+        a{
+            color: black;
+            text-decoration: underline !important;
+            &:hover{
+                 color: $color-red;
+            }
+        }
+    }
+}
+
+@mixin photo-list {
+    ul{
+        li{
+            padding: 2.5px;
+            width: 25%;
+            height: 100px;
+            div{
+                height: 100%;
+                background-color: $color-black;
+                overflow: hidden;
+                a{
+                    height: 100%;
+                    display: block;
+                    transition: transform .4s ease-in-out , opacity .2s;
+                }
+                @for $d from 1 through 8 {
+                    .photo-#{$d} {
+                        background: map-get($map: $photos, $key: $d) center no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .camera-link{
+                    transition: all .2s;
+                    z-index: 3;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    font-size: 14px;
+                }
+            }
+            &:hover div .camera-link{
+                opacity: 1;
+            }
+            &:hover div a{
+                opacity: .6;
+                transform: scale3d(1.1,1.1,1.1);
+            }
+        }
+    }
+}
+
+@mixin logo {
+    padding-left: 7px;
+    color: black;
+    font-weight: 800;
+    font-size: 34px;
+    position: relative;
+    &::after{
+        content: "24H";
+        color: rgb(247, 9, 9);
+        font-size: 16px;
+        position: absolute;
+        top: -10px;
+        right: 0;
+    }
+}

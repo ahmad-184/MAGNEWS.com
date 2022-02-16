@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGNEWS</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- bootstrap css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/header.min.css">
+<link rel="stylesheet" href="css/MediaQuery.min.css">
+<link rel="stylesheet" href="css/trendingPost.min.css">
+<link rel="stylesheet" href="css/MiddleBigSection.min.css">
+<link rel="stylesheet" href="css/popular-S.min.css">
+<link rel="stylesheet" href="css/Footer.min.css">
+<!-- components link -->
+<link rel="stylesheet" href="css/components.min.css">
+<body>
+    <header id="header">
+        <section class="heading-nav">
+            <div class="container">
+                <div class="d-flex heading-nav-container flex-wrap justify-content-between">
+                    <div >
+                        <nav class="text-uppercase">
+                            <ul>
+                                <li><a  href="#">about us</a></li>
+                                <li><a  href="#">contact</a></li>
+                                <li><a  href="#">advertisement</a></li>
+                                <li><a  href="#">privacy</a></li>
+                                <li><a  href="#"> <i class="bi bi-box-arrow-in-right"></i> login</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logo-container container py-md-4 pt-4 pb-3">
+            <div class= "row align-items-center justify-content-between">
+                <div class="logo col-xl-3 col-12 text-center mb-md-2  mb-xl-0">
+                    <h1 class="d-flex justify-content-xl-start justify-content-center">
+                        <a href="#" class="text-uppercase">magnews</a>
+                    </h1>
+                </div>
+                <div class="d-none d-md-block banner m-auto col-xl-9 col-11 d-flex justify-content-center justify-content-xl-end">
+                    <div class="d-flex align-items-end text-uppercase col-lg-9 m-auto">
+                        <p class="px-2">ad space 734*80</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="-navbar">
+            <div class="container">
+                <div class="d-flex justify-content-md-between justify-content-end align-items-center">
+                    <nav class="text-uppercase d-none d-md-block">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">sport</a></li>
+                            <li><a href="#">lifestyle</a></li>
+                            <li><a href="#">fashion</a></li>
+                            <li><a href="#">music</a></li>
+                            <li><a href="#">business</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="" name="form" class="form-group">
+                            <div class="position-relative">
+                                <label for="click" class="text-white"><i class="fa fa-search" aria-hidden="true"></i></label>
+                                <input type="checkbox" hidden name="" id="click">
+                                <div class="input-content">
+                                    <div class="d-flex">
+                                        <input type="text" placeholder="Search" name="" id="">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="navbar-mobile d-md-none">
+                          <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                          </button>
+                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header pt-5 pb-3">
+                                <h1 class="m-auto">
+                                    <a href="#" class="text-uppercase">magnews</a>
+                                </h1>
+                            </div>
+                            <div class="offcanvas-body px-0">
+                                <nav class="d-flex flex-column text-uppercase text-white w-100">
+                                    <a class="text-white" href="#">home</a>
+                                    <a class="text-white"  href="#">news</a>
+                                    <a class="text-white"  href="#">sport</a>
+                                    <a class="text-white"  href="#">lifestyle</a>
+                                    <a class="text-white"  href="#">fashion</a>
+                                    <a class="text-white"  href="#">music</a>
+                                    <a class="text-white"  href="#">business</a>
+                                </nav>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-slider mb-5">
+            <div class="slider">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active ">
+                        <!-- single slide box -->
+                        <div class="single-box-slider d-flex align-items-end ">
+                            <div class="img img-1 position-relative">
+                            </div>
+                            <div class=" body position-absolute p-5 px-4 px-md-5">
+                                <div class="pb-4 d-flex align-items-center">
+                                    <span>
+                                        <a class="text-white" href="#">NEW</a>
+                                    </span>
+                                    <span class="text-white">
+                                        <i class="bi bi-camera-fill"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single slide box -->
+                      </div>
+                      <div class="carousel-item">
+                        <!-- single slide box -->
+                        <div class="single-box-slider d-flex align-items-end ">
+                            <div class="img img-2 position-relative">
+                            </div>
+                            <div class=" body position-absolute p-5 px-4 px-md-5">
+                                <div class="pb-4 d-flex align-items-center">
+                                    <span>
+                                        <a class="text-white" href="#">NEW</a>
+                                    </span>
+                                    <span class="text-white">
+                                        <i class="bi bi-camera-fill"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single slide box -->
+                      </div>
+                      <div class="carousel-item">
+                        <!-- single slide box -->
+                        <div class="single-box-slider d-flex align-items-end ">
+                            <div class="img img-3 position-relative">
+                            </div>
+                            <div class=" body position-absolute p-5 px-4 px-md-5">
+                                <div class="pb-4 d-flex align-items-center">
+                                    <span>
+                                        <a class="text-white" href="#">NEW</a>
+                                    </span>
+                                    <span class="text-white">
+                                        <i class="bi bi-camera-fill"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single slide box -->
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- trending posts -->
+        <article id="trendingPost" class="mb-5">
+            <div class="trendingPost-container mb-5 container">
+                <!-- title trending posts -->
+                <section class="trendingPost-title position-relative">
+                    <div class="d-flex flex-wrap flex-column flex-md-row justify-content-between align-items-md-center">
+                        <div class="title  ">
+                            <h5 class="text-uppercase d-inline-block mb-0 position-relative">
+                                trending post
+                            </h5>
+                        </div>
+                        <div class="d-flex buttons  text-uppercase ">
+                            <button type="button" class="text-uppercase">all</button>
+                            <button type="button" class="text-uppercase">news</button>
+                            <button type="button" class="text-uppercase">sport</button>
+                            <button type="button" class="text-uppercase">music</button>
+                            <button type="button" class="text-uppercase">business</button>
+                            <button type="button" class="text-uppercase">lifestytle</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- end title trending posts -->
+                <section class="trendingPost-body pt-4">
+                    <div class="trendingPost-body-big-boxes mb-3">
+                        <div class="row">
+                            <!-- single big boxes -->
+                            <div class="Single-B-B mb-4 col-md-6 col-lg-3">
+                                <a href="#">
+                                    <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                        <div class="position-relative img">
+                                            <img src="img/2.jpg" class=" img-fluid" alt="people walking">
+                                        </div>
+                                        <span class="position-absolute ms-4 mb-4 text-white">
+                                            <i class="fa fa-camera"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="text-c">
+                                    <div>
+                                        <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single big boxes -->
+                            <!-- single big boxes -->
+                            <div class="Single-B-B mb-4 col-md-6 col-lg-3">
+                                <a href="#">
+                                    <div class="img-c mb-3">
+                                        <div class="position-relative img">
+                                            <img src="img/3.jpg" class=" img-fluid" alt="people walking">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="text-c">
+                                    <div>
+                                        <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single big boxes -->
+                            <!-- single big boxes -->
+                            <div class="Single-B-B mb-4 col-md-6 col-lg-3">
+                                <a href="#">
+                                    <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                        <div class="position-relative img">
+                                            <img src="img/8.jpg" class=" img-fluid" alt="people walking">
+                                        </div>
+                                        <span class="position-absolute ms-4 mb-4 text-white">
+                                            <i class="fa fa-file-text"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="text-c">
+                                    <div>
+                                        <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single big boxes -->
+                            <!-- single big boxes -->
+                            <div class="Single-B-B mb-4 col-md-6 col-lg-3">
+                                <a href="#">
+                                    <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                        <div class="position-relative img">
+                                            <img src="img/5.jpg" class=" img-fluid" alt="people walking">
+                                        </div>
+                                        <span class="position-absolute ms-4 mb-4 text-white">
+                                            <i class="fa fa-file-text"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="text-c">
+                                    <div>
+                                        <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single big boxes -->
+                        </div>
+                    </div>
+                    <div class="trendingPost-body-small-boxes">
+                        <div class="row">
+                            <div class="box-container col-md-6 col-lg-4">
+                                <!-- single small box -->
+                                <div class="Single-B-S d-flex mb-4">
+                                    <a href="#" class="me-3">
+                                        <div class="img">
+                                            <img src="img/6.jpg" class="img-fluid" alt="famous building">
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <div>
+                                            <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                        </div>
+                                        <div>
+                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single small box -->
+                                <!-- single small box -->
+                                <div class="Single-B-S d-flex mb-4">
+                                    <a href="#" class="me-3">
+                                        <div class="img">
+                                            <img src="img/2.jpg" class="img-fluid" alt="famous building">
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <div>
+                                            <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                        </div>
+                                        <div>
+                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single small box -->
+                            </div>
+                            <div class="box-container col-md-6 col-lg-4">
+                                <!-- single small box -->
+                                <div class="Single-B-S d-flex mb-4">
+                                    <a href="#" class="me-3">
+                                        <div class="img">
+                                            <img src="img/4.jpg" class="img-fluid" alt="famous building">
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <div>
+                                            <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                        </div>
+                                        <div>
+                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single small box -->
+                                <!-- single small box -->
+                                <div class="Single-B-S d-flex mb-4">
+                                    <a href="#" class="me-3">
+                                        <div class="img">
+                                            <img src="img/3.jpg" class="img-fluid" alt="famous building">
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <div>
+                                            <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                        </div>
+                                        <div>
+                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single small box -->
+                            </div>
+                            <div class="box-container d-md-none d-lg-block col-lg-4">
+                                <!-- single small box -->
+                                <div class="Single-B-S d-flex mb-4">
+                                    <a href="#" class="me-3">
+                                        <div class="img">
+                                            <img src="img/9.jpg" class="img-fluid" alt="famous building">
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <div>
+                                            <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                        </div>
+                                        <div>
+                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single small box -->
+                                <!-- single small box -->
+                                <div class="Single-B-S d-flex mb-4">
+                                    <a href="#" class="me-3">
+                                        <div class="img">
+                                            <img src="img/7.jpg" class="img-fluid" alt="famous building">
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <div>
+                                            <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                        </div>
+                                        <div>
+                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single small box -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <!-- end trending posts -->
+        <!-- middle big section -->
+        <article id="MiddleBigSection" class="mb-lg-5">
+            <div class="container">
+                <div class="row">
+                    <section class="left-section col-lg-8">
+                        <div class="row">
+                            <div class="news col-md-6">
+                                <div class="title d-flex">
+                                    <h5 class="mb-0 position-relative d-inline-block text-white text-uppercase">news</h5>
+                                </div>
+                                <div class="--single-boxes pt-4">
+                                    <div class="big-boxes">
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-4 ">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                <img src="img/1.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-camera"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                            <div class="caption pt-2">
+                                                <p class="mb-1" >Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui, ne accommodare theophrastus reprehendunt vel. Et commodo menandri eam.</p>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                    </div>
+                                    <div class="small-boxes">
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/8.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/5.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sport col-md-6">
+                                <div class="title d-flex">
+                                    <h5 class="mb-0 position-relative d-inline-block text-white text-uppercase">sport</h5>
+                                </div>
+                                <div class="--single-boxes pt-4">
+                                    <div class="big-boxes">
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-4 ">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                        <img src="img/7.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                            <div class="caption pt-2">
+                                                <p class="mb-1" >Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui, ne accommodare theophrastus reprehendunt vel. Et commodo menandri eam.</p>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                    </div>
+                                    <div class="small-boxes">
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/1.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/4.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-row-news">
+                                <div class="title d-flex">
+                                    <h5 class="mb-0 position-relative d-inline-block text-white text-uppercase">news</h5>
+                                </div>
+                                <div class="--single-boxes pt-4">
+                                    <div class="big-boxes row">
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-4 col-md-6">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                <img src="img/3.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-camera"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                            <div class="caption pt-2">
+                                                <p class="mb-1" >Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui, ne accommodare theophrastus reprehendunt vel. Et commodo menandri eam.</p>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-4 col-md-6">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                <img src="img/9.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-camera"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                            <div class="caption pt-2">
+                                                <p class="mb-1" >Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui, ne accommodare theophrastus reprehendunt vel. Et commodo menandri eam.</p>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                    </div>
+                                    <div class="small-boxes row">
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-2 col-md-4">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                <img src="img/15.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-2 col-md-4">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                <img src="img/2.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                        <!-- single big boxes -->
+                                        <div class="Single-B-B mb-2 col-md-4">
+                                            <a href="#">
+                                                <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                    <div class="position-relative img">
+                                                <img src="img/1.jpg" class=" img-fluid" alt="people walking">
+                                                    </div>
+                                                    <span class="position-absolute ms-4 mb-4 text-white">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="text-c">
+                                                <div>
+                                                    <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single big boxes -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <aside class="col-lg-4">
+                        <section class="right-section">
+                            <div class="right-section-content">
+                                <div class="banner d-none d-md-block pt-4 pt-lg-0 pb-2">
+                                    <div class="-banner m-auto d-flex justify-content-center">
+                                        <div class="d-flex m-auto align-items-end text-uppercase col-lg-9 m-auto">
+                                            <p class="px-2">ad space 300*580</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social-content my-4 mt-5 mt-md-4">
+                                    <div class="title text-center mb-3">
+                                        <h5 class="text-uppercase">stay connected</h5>
+                                    </div>
+                                    <div class="link">
+                                        <ul class="">
+                                            <li>
+                                                <a href="#" class=" single-social-link single-social-link-1  py-2  d-flex align-items-center flex-column  text-white">
+                                                    <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                                    <span class="text-uppercase">facebook</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=" single-social-link single-social-link-2  py-2  d-flex align-items-center flex-column  text-white">
+                                                    <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                                    <span class="text-uppercase">twitter</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=" single-social-link single-social-link-3 py-2  d-flex align-items-center flex-column  text-white">
+                                                    <span><i class="fa fa-google" aria-hidden="true"></i></span>
+                                                    <span class="text-uppercase">google+</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=" single-social-link single-social-link-4 py-2  d-flex align-items-center flex-column  text-white">
+                                                    <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                                    <span class="text-uppercase">instagram</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=" single-social-link single-social-link-5 py-2  d-flex align-items-center flex-column  text-white">
+                                                    <span><i class="fa fa-youtube" aria-hidden="true"></i></span>
+                                                    <span class="text-uppercase">youtube</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class=" single-social-link single-social-link-6 py-2  d-flex align-items-center flex-column  text-white">
+                                                    <span><i class="fa fa-rss" aria-hidden="true"></i></span>
+                                                    <span class="text-uppercase">rss</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="subscribe my-2 text-center p-4 ">
+                                    <div class="title mb-3">
+                                        <h5 class="mb-0 text-uppercase">Subscribe to Newslatter</h5>
+                                    </div>
+                                    <form action="" class="form-group d-flex flex-column justify-content-center">
+                                        <div class="input ">
+                                            <input type="text" placeholder="Enter Your Email" class="form-control" name="" id="">
+                                        </div>
+                                        <div class="button">
+                                            <button class="w-100 text-uppercase" type="submit">subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="slider py-4">
+                                    <div class="text-center title mb-3">
+                                        <h6 class="text-uppercase">Most Read</h6>
+                                    </div>
+                                    <div class="carousel-content">
+                                        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <!-- single big boxes -->
+                                                <div class="Single-B-B">
+                                                    <a href="#">
+                                                        <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                            <div class="position-relative img">
+                                                                <img src="img/8.jpg" class=" img-fluid" alt="people walking">
+                                                            </div>
+                                                            <span class="position-absolute ms-4 mb-4 text-white">
+                                                                <i class="fa fa-file-text"></i>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="text-c">
+                                                        <div>
+                                                            <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end single big boxes -->
+                                              </div>
+                                              <div class="carousel-item">
+                                                <!-- single big boxes -->
+                                                <div class="Single-B-B">
+                                                    <a href="#">
+                                                        <div class="position-relative img-c mb-3 d-flex align-items-end">
+                                                            <div class="position-relative img">
+                                                                <img src="img/5.jpg" class=" img-fluid" alt="people walking">
+                                                            </div>
+                                                            <span class="position-absolute ms-4 mb-4 text-white">
+                                                                <i class="fa fa-file-text"></i>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                    <div class="text-c">
+                                                        <div>
+                                                            <h5 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h5>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase mg-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end single big boxes -->
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="list pt-3">
+                                    <nav>
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/6.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/2.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                        <!-- single small box -->
+                                        <div class="Single-B-S d-flex mb-4">
+                                            <a href="#" class="me-3">
+                                                <div class="img">
+                                                    <img src="img/4.jpg" class="img-fluid" alt="famous building">
+                                                </div>
+                                            </a>
+                                            <div class="text">
+                                                <div>
+                                                    <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                                </div>
+                                                <div>
+                                                    <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                                    <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end single small box -->
+                                    </nav>
+                                </div>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </article>
+        <!-- end middle big section -->
+        <!-- big banner -->
+        <div class="big-banner pb-5">
+            <div class="container">
+                <div class="banner m-auto d-none d-lg-block pt-4 pt-lg-0 pb-2">
+                    <div class="-banner d-flex m-auto justify-content-start">
+                        <div class="d-flex align-items-end text-uppercase col-lg-9 ">
+                            <p class="ps-4">ad space 300*580</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end big banner -->
+        <article id="popular" class="pb-4 mb-lg-5  container">
+            <section class="slider pb-5">
+                <div class="">
+                    <div  class="slider-content">
+                        <div class="title position-relative d-flex">
+                            <h5 class="text-uppercase d-inline-block mb-0 position-relative">
+                                Popular Video
+                            </h5>
+                        </div>
+                        <div class="carousel py-4 d-md-none">
+                            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active ">
+                                     <div class="row">
+                                        <div class="">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-1  position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                     </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <div class="">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-2 position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="">
+                                              <!-- single slide box -->
+                                            <div class="single-box-slider position-relative d-flex align-items-end">
+                                              <div class="img img-3 position-relative">
+                                              </div>
+                                              <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                  <div class="pb-1 d-flex align-items-center">
+                                                      <span>
+                                                          <a class="text-white" href="#">NEW</a>
+                                                      </span>
+                                                      <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                      </span>
+                                                  </div>
+                                                  <div>
+                                                      <div>
+                                                          <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                      </div>
+                                                      <div>
+                                                          <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                          <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                           </div>
+                                          <!-- end single slide box -->
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="">
+                                              <!-- single slide box -->
+                                            <div class="single-box-slider position-relative d-flex align-items-end">
+                                              <div class="img img-4 position-relative">
+                                              </div>
+                                              <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                  <div class="pb-1 d-flex align-items-center">
+                                                      <span>
+                                                          <a class="text-white" href="#">NEW</a>
+                                                      </span>
+                                                      <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                      </span>
+                                                  </div>
+                                                  <div>
+                                                      <div>
+                                                          <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                      </div>
+                                                      <div>
+                                                          <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                          <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                           </div>
+                                          <!-- end single slide box -->
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="">
+                                              <!-- single slide box -->
+                                            <div class="single-box-slider position-relative d-flex align-items-end">
+                                              <div class="img img-5 position-relative">
+                                              </div>
+                                              <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                  <div class="pb-1 d-flex align-items-center">
+                                                      <span>
+                                                          <a class="text-white" href="#">NEW</a>
+                                                      </span>
+                                                      <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                      </span>
+                                                  </div>
+                                                  <div>
+                                                      <div>
+                                                          <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                      </div>
+                                                      <div>
+                                                          <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                          <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                           </div>
+                                          <!-- end single slide box -->
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="">
+                                              <!-- single slide box -->
+                                            <div class="single-box-slider position-relative d-flex align-items-end">
+                                              <div class="img img-6 position-relative">
+                                              </div>
+                                              <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                  <div class="pb-1 d-flex align-items-center">
+                                                      <span>
+                                                          <a class="text-white" href="#">NEW</a>
+                                                      </span>
+                                                      <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                      </span>
+                                                  </div>
+                                                  <div>
+                                                      <div>
+                                                          <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                      </div>
+                                                      <div>
+                                                          <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                          <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                           </div>
+                                          <!-- end single slide box -->
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="buttons position-absolute">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                                        
+                                        <span class="carousel-arrow-icon">
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                                        
+                                        <span class="carousel-arrow-icon">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel py-4 d-none d-md-block d-lg-none">
+                            <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active ">
+                                     <div class="row">
+                                        <div class="col-6">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-1 position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                        <div class="col-6">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-2 position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                     </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                     <div class="row">
+                                        <div class="col-6">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-3 position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                        <div class="col-6">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-4 position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                     </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-5 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                            <div class="col-6">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-6 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                                </div>
+                                <div class="buttons position-absolute">
+                                    <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                                        
+                                        <span class="carousel-arrow-icon">
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                                        
+                                        <span class="carousel-arrow-icon">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="carousel py-4 d-none d-lg-block">
+                                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active ">
+                                         <div class="row">
+                                            <div class="col-4">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-1 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                            <div class="col-4">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-2 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                            <div class="col-4">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-3 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                         </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                         <div class="row">
+                                            <div class="col-4">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-4 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                            <div class="col-4">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-5 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                            <div class="col-4">
+                                                <!-- single slide box -->
+                                              <div class="single-box-slider position-relative d-flex align-items-end">
+                                                <div class="img img-6 position-relative">
+                                                </div>
+                                                <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                    <div class="pb-1 d-flex align-items-center">
+                                                        <span>
+                                                            <a class="text-white" href="#">NEW</a>
+                                                        </span>
+                                                        <span class="text-white">
+                                                            <i class="fa fa-video-camera"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                            <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <!-- end single slide box -->
+                                            </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons position-absolute">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                                        
+                                        <span class="carousel-arrow-icon">
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                                        
+                                        <span class="carousel-arrow-icon">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <section class="popular-post col-lg-8 ">
+                    <div class="">
+                        <div class="title position-relative d-flex">
+                            <h5 class="text-uppercase d-inline-block mb-0 position-relative">
+                                Popular post
+                            </h5>
+                        </div>
+                        <div class="boxes pt-2 mb-3">
+                            <div class="py-3 pt-4">
+                                  <!-- single slide box -->
+                                <div class="single-box d-flex row">
+                                    <div class="img-content col-6 col-sm-5 col-md-6 ">
+                                        <a href="#" class="d-block img-content-">
+                                            <img src="img/3.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="body pt-3 pt-sm-0 col-12 col-sm-6">
+                                        <div class="pb-3 d-flex align-items-center">
+                                            <span >
+                                                <a class="text-white" href="#">NEW</a>
+                                            </span>
+                                            <span class="text-white">
+                                                <i class="fa fa-file-text"></i>
+                                            </span>
+                                        </div>
+                                        <div class="mb-md-3">
+                                            <div>
+                                                <h1 class="text-uppercase"><a href="#" class="text-black">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                            </div>
+                                            <div>
+                                                <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-text d-none d-md-block">
+                                            <p>Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <!-- end single slide box -->
+                            </div>
+                            <div class="py-3">
+                                <!-- single slide box -->
+                              <div class="single-box d-flex row">
+                                  <div class="img-content col-6 col-sm-5 col-md-6 ">
+                                      <a href="#" class="d-block img-content-">
+                                          <img src="img/2.jpg" class="img-fluid" alt="">
+                                      </a>
+                                  </div>
+                                  <div class="body pt-3 pt-sm-0 col-12 col-sm-6">
+                                      <div class="pb-3 d-flex align-items-center">
+                                          <span >
+                                              <a class="text-white" href="#">NEW</a>
+                                          </span>
+                                          <span class="text-white">
+                                              <i class="fa fa-file-text"></i>
+                                          </span>
+                                      </div>
+                                      <div class="mb-md-3">
+                                          <div>
+                                              <h1 class="text-uppercase"><a href="#" class="text-black">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                          </div>
+                                          <div>
+                                              <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                              <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                          </div>
+                                      </div>
+                                      <div class="footer-text d-none d-md-block">
+                                          <p>Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.</p>
+                                      </div>
+                                  </div>
+                               </div>
+                              <!-- end single slide box -->
+                          </div>
+                          <div class="py-3">
+                            <!-- single slide box -->
+                          <div class="single-box d-flex row">
+                              <div class="img-content col-6 col-sm-5 col-md-6 ">
+                                  <a href="#" class="d-block img-content-">
+                                      <img src="img/5.jpg" class="img-fluid" alt="">
+                                  </a>
+                              </div>
+                              <div class="body pt-3 pt-sm-0 col-12 col-sm-6">
+                                  <div class="pb-3 d-flex align-items-center">
+                                      <span >
+                                          <a class="text-white" href="#">NEW</a>
+                                      </span>
+                                      <span class="text-white">
+                                          <i class="fa fa-file-text"></i>
+                                      </span>
+                                  </div>
+                                  <div class="mb-md-3">
+                                      <div>
+                                          <h1 class="text-uppercase"><a href="#" class="text-black">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                      </div>
+                                      <div>
+                                          <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                          <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                      </div>
+                                  </div>
+                                  <div class="footer-text d-none d-md-block">
+                                      <p>Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.</p>
+                                  </div>
+                              </div>
+                           </div>
+                          <!-- end single slide box -->
+                      </div>
+                      <div class="py-3">
+                        <!-- single slide box -->
+                      <div class="single-box d-flex row">
+                          <div class="img-content col-6 col-sm-5 col-md-6 ">
+                              <a href="#" class="d-block img-content-">
+                                  <img src="img/14.jpg" class="img-fluid" alt="">
+                              </a>
+                          </div>
+                          <div class="body pt-3 pt-sm-0 col-12 col-sm-6">
+                              <div class="pb-3 d-flex align-items-center">
+                                  <span >
+                                      <a class="text-white" href="#">NEW</a>
+                                  </span>
+                                  <span class="text-white">
+                                      <i class="fa fa-file-text"></i>
+                                  </span>
+                              </div>
+                              <div class="mb-md-3">
+                                  <div>
+                                      <h1 class="text-uppercase"><a href="#" class="text-black">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                  </div>
+                                  <div>
+                                      <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                      <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                  </div>
+                              </div>
+                              <div class="footer-text d-none d-md-block">
+                                  <p>Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.</p>
+                              </div>
+                          </div>
+                       </div>
+                      <!-- end single slide box -->
+                  </div>
+                        </div>
+                        <div class="page">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item me-1 "><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item me-1"><a class="page-link " href="#">2</a></li>
+                                    <li class="page-item me-1"><a class="page-link " href="#">3</a></li>
+                                    <li class="page-item ">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <aside class="col-lg-4">
+                    <div class="slider pt-5 pb-3 pt-lg-0">
+                        <div class="title text-center">
+                            <h6 class="text-uppercase title-text">Featured Posts</h6>
+                        </div>
+                        <div class="mt-3">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-1  position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="">
+                                            <!-- single slide box -->
+                                          <div class="single-box-slider position-relative d-flex align-items-end">
+                                            <div class="img img-2  position-relative">
+                                            </div>
+                                            <div class=" body position-absolute ps-3 pe-5 pt-5 pb-3">
+                                                <div class="pb-1 d-flex align-items-center">
+                                                    <span>
+                                                        <a class="text-white" href="#">NEW</a>
+                                                    </span>
+                                                    <span class="text-white">
+                                                        <i class="fa fa-video-camera"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <h1 class="text-uppercase"><a href="#" class="text-white">Duis urbanitas eam in, tempor consequat.</a></h1>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> JUnuary 31.2017</span>
+                                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <!-- end single slide box -->
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="PhotosList pt-5 pb-2">
+                        <div class="title text-center mb-3">
+                            <h6 class="text-uppercase">flickr photos</h6>
+                        </div>
+                        <nav>
+                            <ul class="d-flex flex-wrap">
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-1 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-2 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-3 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-4 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-5 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-6 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-7 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-8 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tweets pt-4">
+                        <div class="title text-center pb-2">
+                            <h6 class="text-uppercase">recent tweets</h6>
+                        </div>
+                        <!-- single tweets -->
+                        <div class="tweets-content d-flex mb-4">
+                            <div class="icon">
+                                <span class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                            </div>
+                            <div>
+                                <p class="text">
+                                    <strong><a href="#">@magnews</a></strong> Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis <strong><a href="#">https://t.co/DwsTbsmxTP</a></strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end single tweets -->
+                        <!-- single tweets -->
+                        <div class="tweets-content d-flex mb-4">
+                            <div class="icon">
+                                <span class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                            </div>
+                            <div>
+                                <p class="text">
+                                    <strong><a href="#">@magnews</a></strong> Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis <strong><a href="#">https://t.co/DwsTbsmxTP</a></strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end single tweets -->
+                        <!-- single tweets -->
+                        <div class="tweets-content d-flex">
+                            <div class="icon">
+                                <span class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                            </div>
+                            <div>
+                                <p class="text">
+                                    <strong><a href="#">@magnews</a></strong> Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis <strong><a href="#">https://t.co/DwsTbsmxTP</a></strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end single tweets -->
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </main>
+    <footer id="footer" class="pt-5">
+        <section class="container">
+            <div class="row">
+                <div class="footer-section-1 mt-5 mt-lg-3 mb-4 mb-lg-0 col-lg-4">
+                    <div class="logo col-md-10 col-lg-12">
+                        <h1 class="mb-4">
+                            <a href="#" class="text-uppercase">magnews</a>
+                        </h1>
+                        <p>
+                            Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.
+                        </p>
+                    </div>
+                    <div class="social-link mt-4 pt-2 pb-2 mb-4">
+                        <div class="title pb-2">
+                            <h6 class="text-uppercase text-white heading-text">follow us</h>
+                        </div>
+                        <div class="links d-flex">
+                            <a href="#" class="text-white link-1"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white link-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white link-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white link-4"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white link-5"><i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+                            <a href="#" class="text-white link-6"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="subscribe col-md-8 col-lg-12">
+                        <div class="title mb-3">
+                            <h6 class="heading-text text-uppercase text-white">Subscribe to Newslatter</h6>
+                        </div>
+                        <div>
+                            <form>
+                                <div class="pb-3">
+                                    <input class="w-100 text-capitalize" type="text" name="" id="" placeholder="enter your email">
+                                </div>
+                                <div>
+                                    <button class="text-white text-uppercase" type="submit">subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section-2 pt-1 pt-lg-0 pb-4 mb-1 mb-lg-0 col-lg-4">
+                    <div class="featured-post">
+                        <div class="title mb-4">
+                            <h6 class="text-uppercase text-white heading-text">featured posts</h6>
+                        </div>
+                        <div class="small-boxes">
+                            <!-- single small box -->
+                            <div class="Single-B-S d-flex mb-4 pb-2">
+                                <a href="#" class="me-3">
+                                    <div class="img">
+                                        <img src="img/4.jpg" class="img-fluid" alt="famous building">
+                                    </div>
+                                </a>
+                                <div class="text">
+                                    <div>
+                                        <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single small box -->
+                            <!-- single small box -->
+                            <div class="Single-B-S d-flex mb-4 pb-2">
+                                <a href="#" class="me-3">
+                                    <div class="img">
+                                        <img src="img/14.jpg" class="img-fluid" alt="famous building">
+                                    </div>
+                                </a>
+                                <div class="text">
+                                    <div>
+                                        <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single small box -->
+                            <!-- single small box -->
+                            <div class="Single-B-S d-flex">
+                                <a href="#" class="me-3">
+                                    <div class="img">
+                                        <img src="img/15.jpg" class="img-fluid" alt="famous building">
+                                    </div>
+                                </a>
+                                <div class="text">
+                                    <div>
+                                        <h6 class="text-uppercase"><a href="#">Duis urbanitas eam in, tempor consequat.</a></h6>
+                                    </div>
+                                    <div>
+                                        <span class="text-uppercase me-1"><i class="bi bi-alarm-fill"></i> january 31.2017</span>
+                                        <span ><i class="bi bi-chat-fill"></i> 33</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single small box -->
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section-3 col-lg-4">
+                    <div class="photos-list pb-4">
+                        <div class="title pb-2">
+                            <h6 class="heading-text text-white text-uppercase">Flickr Photos</h6>
+                        </div>
+                        <nav>
+                            <ul class="d-flex flex-wrap">
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-1 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-2 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-3 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-4 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-5 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-6 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-7 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="position-relative">
+                                        <a class="photo-8 "  href="#"></a>
+                                        <a href="#" class="camera-link position-absolute d-flex align-items-center justify-content-center"> <span class="text-white"><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tweets">
+                        <div class="title pb-2">
+                            <h6 class="heading-text text-uppercase text-white text-uppercase">recent tweets</h6>
+                        </div>
+                        <!-- single tweets -->
+                        <div class="tweets-content d-flex mb-4">
+                            <div class="icon">
+                                <span class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                            </div>
+                            <div>
+                                <p class="text">
+                                    <strong><a href="#">@magnews</a></strong> Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis <strong><a href="#">https://t.co/DwsTbsmxTP</a></strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end single tweets -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="CopyRight pt-5 pb-3 mt-lg-4">
+            <div class="container">
+                <div class="row">
+                    <div class="pb-3 order-lg-2 nav-list d-flex justify-content-center justify-content-lg-end col-lg">
+                        <nav>
+                            <a href="#" class="text-uppercase ">about us</a>
+                            <a href="#" class="text-uppercase ">contact</a>
+                            <a href="#" class="text-uppercase ">adverticement</a>
+                            <a href="#" class="text-uppercase ">privacy</a>
+                        </nav>
+                    </div>
+                    <div class="text-CopyRight text-center col-lg text-lg-start">
+                        <p>Copyright ©2022 All rights reserved | This template is made with ❤ by Ahmadreza</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<!-- font-awesome 5 -->
+<script src="https://kit.fontawesome.com/8c82115ba3.js" crossorigin="anonymous"></script>
+<!-- javascript bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>

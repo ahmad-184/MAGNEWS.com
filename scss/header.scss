@@ -1,0 +1,299 @@
+@import 'components.scss';
+
+$color-black: #07090c;
+$color-red: #EF233C; 
+$color-gray: #DDD;
+
+// maixin
+
+@mixin logo {
+    padding-left: 7px;
+    color: black;
+    font-weight: 800;
+    font-size: 34px;
+    position: relative;
+    &::after{
+        content: "24H";
+        color: rgb(247, 9, 9);
+        font-size: 16px;
+        position: absolute;
+        top: -10px;
+        right: 0;
+    }
+}
+
+// maps
+
+$urls:(
+    1: url(../img/14.jpg),
+    2: url(../img/2.jpg),
+    3: url(../img/3.jpg),
+);
+
+// styles
+
+#header{
+    .heading-nav{
+        border-bottom: 1px solid $color-gray;
+        div{
+            nav{
+                ul{
+                    li{
+                        display: inline-block;
+                        border-left: 1px solid $color-gray;
+                        padding: 2px 0 4px 0;
+                        a{
+                            font-size: 12.5px;
+                            color: black;
+                            
+                            padding: 0 8px;
+                            &:hover{
+                                color: rgb(250, 37, 37);
+                            }
+                        }
+                        &:last-of-type{
+                            border-right: 1px solid $color-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo-container{
+        .logo{
+            h1{
+                
+                a{
+                    @include logo;
+                }
+            }
+        }
+        .banner{
+            div{
+                background-color: #d9d9d9;
+                
+                height: 5.4rem;
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+    .-navbar{
+        background-color: $color-black;
+        position: sticky !important;
+        z-index: 20;
+        top: 0;
+
+        nav{
+            ul{
+                li{
+                    display: inline-block;
+                    border-left: 1px solid #222;
+                    padding: 23px 7px;
+                    margin-left: -4px;
+                    &:first-of-type{
+                        background-color: $color-red;
+                        &:hover{
+                            background-color: $color-red;
+                        }
+                    }
+                    &:last-of-type{
+                        border-right: 1px solid #222;
+                    }
+                    &:hover{
+                        background-color: #222;
+                    }
+                    a{
+                        padding: 23px 7px;
+                        color: white;
+                        font-size: 15px;
+                        font-family: 'Open Sans', sans-serif !important;
+                    }
+                }
+            }
+        }
+        .search{
+            form{
+                label{
+                    cursor: pointer;
+                    padding: 23px;
+                    &:active{
+                        background-color: $color-red !important;
+                    }
+                    &:focus{
+                        background-color: $color-red;
+                    }
+                    i{
+                        opacity: .95;
+                    }
+                }
+                input[type=checkbox]:checked ~ .input-content{
+                    display: block;
+                }
+                .input-content{
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    background-color: $color-black;
+                    padding: 1rem 2rem;
+                    border-top: 2px solid #e13737;
+                    border-radius: 0 0 3px 3px;
+                    z-index: 4;
+                    input[type=text]{
+                        padding: 7px 4px 7px 7px;
+                        
+                        border: none;
+                        &::placeholder{
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            font-family: 'Open sans', sans-serif !important;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-mobile{
+            button{
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 23px;
+                padding: 16px 15px;
+                i{
+                    opacity: .95;
+                }
+            }
+            .offcanvas-start{
+                width: 300px !important;
+                background-color: $color-black;
+                .offcanvas-header{
+                    h1{
+                        a{
+                            @include logo;
+                            color: white !important;
+                        }
+                    }
+                }
+                .offcanvas-body{
+                    font-family: 'Open Sans', sans-serif !important;
+                    nav{
+                        height: 25rem;
+                        overflow: auto;
+                        a{
+                            font-size: 15px;
+                            padding: 24px 15px;
+                            &:first-of-type{
+                                background-color: $color-red;
+                            }
+                            &:hover{
+                                background-color: #222;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-slider{
+        .slider{
+            width: 100%;
+            height: 584px;
+            .carousel{
+                width: 100%;
+                height: 100%;
+                .carousel-control-next, .carousel-control-prev{
+                    @include carouselButtons;
+                }
+                .carousel-inner{
+                    height: 100%;
+                    .carousel-item{
+                        height: 100%;
+                        .single-box-slider{
+                            height: 100%;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                top: 50%;
+                                z-index: 1;
+                                opacity: 0;
+                                transition: all .3s;
+                                background: #ffffff;
+                                background: linear-gradient(180deg, #ffffff00 0%, #0000009e 50%, #000000de 88%);
+                            }
+                            &:hover::after{
+                                opacity: 1;
+                            }
+                            .img{
+                                transition: all .5s;
+                                width: 100%;
+                                height: 100%;
+                                background: url(../img/pexels-lukas-kloeppel-2416653-min.jpg) bottom no-repeat;
+                                background-size: cover;
+                            }
+                            &:hover .img{
+                                transform: scale(1.04);
+                            }
+                            @for $var from 1 through 3 {
+                                .img-#{$var}{
+                                    background-image: map-get($map: $urls, $key: $var) ;
+                                }
+                            }
+                            .img-1{
+                                background-position: center;
+                            }
+                            .body{
+                                z-index: 2;
+                                div{
+                                    &:first-of-type{
+                                        span{
+                                            &:first-of-type{
+                                                a{
+                                                    background-color: $color-red;
+                                                    padding: 6px 8px;
+                                                    font-size: 15px;
+                                                    font-weight: 300;
+                                                    &:hover{
+                                                        opacity: .5;
+                                                    }
+                                                }
+                                            }
+                                            &:last-of-type{
+                                                padding: 2px 8px;
+                                                background-color: #393939b3;
+                                                margin-left: 3px;
+                                            }
+                                        }
+                                    }
+                                    &:last-of-type{
+                                        div{
+                                            &:first-of-type{
+                                                h1{
+                                                    a{
+                                                        font-weight: 600;
+                                                        letter-spacing: 0.05em;
+                                                        &:hover{
+                                                            opacity: .8;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &:last-of-type{
+                                                span{
+                                                    color: #DDDDDDB3;
+                                                    font-size: 13px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,289 @@
+@import 'components.scss';
+
+//  var
+
+$color-black: #07090c;
+$color-red: #EF233C; 
+$color-gray: #DDD;
+$color-gray--:#b8b8b8b3;
+$color-caption:#2C2C2C;
+$color-text-title: #DDD;
+
+// end var
+
+// map
+
+$images: (
+    1: url(../img/9.jpg),
+    2: url(../img/10.jpg),
+    3: url(../img/6.jpg),
+    4: url(../img/5.jpg),
+    5: url(../img/2.jpg),
+    6: url(../img/17.jpg),
+);
+$photos: (
+    1: url(../img/11.jpg),
+    2: url(../img/12.jpg),
+    3: url(../img/13.jpg),
+    4: url(../img/16.jpg),
+    5: url(../img/19.jpg),
+    6: url(../img/20.jpg),
+    7: url(../img/18.jpg),
+    8: url(../img/15.jpg),
+);
+
+#popular{
+    .slider{
+        .slider-content{
+            .title{
+                &::after{
+                    @include after-title;
+                }
+                h5{
+                    @include title;
+                }
+            }
+            .buttons{
+                top: 0;
+                right: 48px;
+                .carousel-control-next, .carousel-control-prev{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    text-align: center;
+                    border: 1px solid #DDD;
+                    opacity: .8 !important;
+                    transition: opacity .15s ease;
+                    padding: 9px !important;
+                    background: transparent;
+                    width: 3rem !important;
+                    height: 2.55rem;
+                    top: -65px;
+                    right: 0%;
+                    z-index: 5;
+                    &:hover{
+                        opacity: 1;
+                        background: $color-red;
+                        border-color: $color-red;
+                    }
+                    &:focus{
+                        background: $color-red !important;
+                        border-color: $color-red;
+                    }
+                    .carousel-control-next-icon, .carousel-control-prev-icon{
+                        width: 1.1rem !important;
+                        height: 1.1rem !important;
+                    }
+                }
+                .carousel-control-prev{
+                    left: 91%;
+                    &:hover .carousel-arrow-icon{
+                        color: white; 
+                    }
+                    &:focus .carousel-arrow-icon{
+                        color: white; 
+                    }
+                }
+                .carousel-control-next{
+                    margin-right: 5px;
+                    &:hover .carousel-arrow-icon{
+                        color: white; 
+                    }
+                    &:focus .carousel-arrow-icon{
+                        color: white; 
+                    }
+                }
+                .carousel-arrow-icon{
+                    color: black;
+                    font-size: 13px;
+                }
+            }
+            
+            .single-box-slider{
+                @include carousel-overlay;
+                @for $i from 1 through 6 {
+                    .img-#{$i} {
+                        background: map-get($map: $images, $key: $i) center no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .img-4{
+                    background-position: right;
+                }
+                .img-6{
+                    background-position: bottom;
+                }
+            }
+        }
+    }
+    .popular-post{
+        .title{
+            &::after{
+                @include after-title;
+            }
+            h5{
+                @include title;
+            }
+        }
+        .boxes{
+            .single-box{
+                @include carousel-overlay;
+                height: fit-content;
+                .img-content{
+                    .img-content-{
+                        overflow: hidden;
+                        background-color: $color-caption;
+                        img{
+                            transition: all .4s;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                &:hover .img-content .img-content- img{
+                    opacity: .7;
+                    transform: scale(1.1);
+                }
+                .body{
+                    h1{
+                        a{
+                            &:hover{
+                                color: $color-red !important;
+                            }
+                        }
+                    }
+                    span{
+                        a{
+                            font-weight: 500 !important;
+                        }
+                    }
+                    .footer-text{
+                        p{
+                            color: $color-caption;
+                            font-weight: 300;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .page{
+            nav{
+                ul{
+                    li{
+                        .active{
+                            color: white;
+                            background-color: $color-red !important;
+                            border: 1px solid $color-gray !important;
+                            &:hover{
+                                color: white;
+                            }
+                        }
+                        a{
+                            transition-duration: 0s ;
+                            border-radius: 0 !important;
+                            color: $color-gray;
+                            font-size: 13px ;
+                            border: 1px solid $color-gray ;
+                            &:hover{
+                                color: $color-red;
+                                border-color: $color-red ;
+                                background-color: transparent ;
+                            }
+                            &:focus{
+                                box-shadow: none;
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        max-width: 768px !important;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif !important;
+        .slider{
+            .title{
+                .title-text{
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: $color-text-title;
+                }
+            }
+            .carousel{
+                .carousel-indicators [data-bs-target]{
+                    box-sizing: content-box;
+                    flex: 0 1 auto;
+                    width: 11px;
+                    height: 11px;
+                    padding: 0;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    text-indent: -999px;
+                    cursor: pointer;
+                    background-color: $color-gray--;
+                    background-clip: padding-box;
+                    // opacity: .5;
+                    transition: opacity .6s ease;
+                    border-radius: 50%;
+                    border: none;
+                    position: relative;
+                    top: 2.5rem;
+                }
+                .carousel-indicators .active{
+                    // opacity: 1 !important;
+                    background-color: $color-red
+                }
+                .carousel-inner{
+                    .carousel-item{
+                        .single-box-slider{
+                            @include carousel-overlay;
+                            .img{
+                                &::after{
+                                    background: linear-gradient(180deg, #fff0 0%, #0000001a 40%, #0000009c 100%) !important;
+                                }
+                            }
+                            .img-1{
+                                background: url(../img/1.jpg) center no-repeat;
+                                background-size: cover;
+                            }
+                            .img-2{
+                                background: url(../img/4.jpg) center no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .PhotosList{
+            .title{
+                h6{
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: $color-text-title;
+                }
+            }
+            nav{
+                @include photo-list;
+            }
+        }
+        .tweets{
+            .title{
+                h6{
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: $color-text-title;
+                }
+            }
+            &-content{
+                @include tweet;
+                -webkit-column-gap: 0 !important;
+            }
+        }
+    }
+}
